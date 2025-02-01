@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Poshan Care</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #009688, #004d40);
+            color: #333;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0, 121, 107, 0.9);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .poshan {
+            font-family: 'Samarkan', cursive; /* Applied Samarkan font only to 'Poshan' */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            padding: 14px 22px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            background-color: #00796b;
+            transform: translateY(-4px); /* Subtle hover effect */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .contact-info strong {
+            color: #00796b;
+        }
+
+        .contact-form label {
+            font-weight: 600;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #004d40;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #00796b;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 121, 107, 0.5);
+        }
+
+        .contact-form button {
+            background-color: #00796b;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .contact-form button:hover {
+            background-color: #004d40;
+            transform: translateY(-4px); /* Subtle button hover effect */
+        }
+
+        .contact-info, .contact-form {
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 28px;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 12px 18px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="poshan">Poshan</span>
+            <span class="care"> CARE</span>
+            <span class="contact">- Contact us</span>
+        </h1>
+    </header>
+
+    <!-- Updated Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="text-muted">We’d love to hear from you. Fill in the form below or reach out via email or phone.</p>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@poshancare.org</p>
+            <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+            <p><strong>Address:</strong> 123 Health City, Kerala, India</p>
+        </div>
+        
+        <form class="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message here" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-success w-100">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
